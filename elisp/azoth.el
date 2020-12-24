@@ -21,7 +21,7 @@
 
 (require 'azoth-repo)
 (require 'azoth-completion)
-
+(require 'azoth-ui)
 
 (provide 'azoth)
 ;;; azoth.el ends here
