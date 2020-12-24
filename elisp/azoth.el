@@ -21,7 +21,15 @@
 
 (require 'azoth-repo)
 (require 'azoth-completion)
+(require 'azoth-project)
+(require 'azoth-misc)
 (require 'azoth-ui)
+(require 'azoth-magit)
+(require 'sulfur)
+(require 'mercury)
+(require 'azoth-lisp)
+(require 'azoth-eshell)
+(require 'azoth-web)
 
 (provide 'azoth)
 ;;; azoth.el ends here
