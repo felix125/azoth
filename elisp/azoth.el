@@ -20,6 +20,7 @@
 ;;; Code:
 
 (require 'azoth-repo)
+(require 'azoth-env)
 (require 'azoth-completion)
 (require 'azoth-project)
 (require 'azoth-misc)

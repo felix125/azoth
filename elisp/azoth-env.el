@@ -21,10 +21,8 @@
 
 (eval-when-compile
   (require 'use-package))
-;; (require 'bind-key)
 
-
-
+(setq indent-tabs-mode nil)
 
 
 
