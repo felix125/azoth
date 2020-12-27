@@ -25,11 +25,11 @@
 ;;; Font and frame size
 ;; frame size
 (setq initial-frame-alist
-      '((top . 1) (left . 10) (width  . 280) (height . 150)))
+      (quote ((fullscreen . maximized))))
 
 ;; font
-(add-to-list 'default-frame-alist
-             '(font . "M+ 1mn Light-18"))
+;; (add-to-list 'default-frame-alist
+;;              '(font . "M+ 1mn Light-18"))
 
 ;;; Remove menu-bar, scroll-bar and tool-bar.
 (menu-bar-mode -1)
@@ -48,7 +48,7 @@
   :straight t
   :init
   (setq visual-fill-column-inhibit-sensible-window-split t
-	visual-fill-column-width 80)
+	visual-fill-column-width 100)
   :hook
   (text-mode . visual-line-mode)
   (prog-mode . visual-line-mode)
@@ -88,9 +88,9 @@
 	modus-themes-scale-3 1.21
 	modus-themes-scale-4 1.27
 	modus-themes-scale-5 1.33)
-  (set-face-attribute 'default nil :family "M+ 1mn Light" :height 180)
-  (set-face-attribute 'variable-pitch nil :family "M+ 1mn Light" :height 180)
-  (set-face-attribute 'variable-pitch nil :family "M+ 1mn Light" :height 180)
+  (set-face-attribute 'default nil :family "M+ 1mn Light" :height 160)
+  (set-face-attribute 'variable-pitch nil :family "M+ 1mn Light" :height 160)
+  (set-face-attribute 'variable-pitch nil :family "M+ 1mn Light" :height 160)
   :config
   (load-theme 'modus-vivendi t))
 
