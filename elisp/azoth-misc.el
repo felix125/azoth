@@ -56,21 +56,31 @@
 (use-package recentf
   :straight t
   :defer t
-  :commands recentf-mode
+  :hook (after-init . recentf-mode)
   :config
   (setq recentf-max-saved-items 200
-        recentf-max-menu-items 15)
-  (recentf-mode))
+        recentf-max-menu-items 15))
 
 ;;; undo tree
 (use-package undo-tree
   :straight t
   :defer t
+  :diminish undo-tree-mode
   :commands (undo-tree-undo global-undo-tree-mode)
   :config
   (global-undo-tree-mode)
   (setq undo-tree-visualizer-timestamps t
         undo-tree-visualizer-diff t))
+
+;;; markdown
+(use-package markdown-mode
+  :straight t
+  :defer t)
+
+;;; yaml-mode
+(use-package yaml-mode
+  :straight t
+  :defer t)
 
 (provide 'azoth-misc)
 ;;; azoth-misc.el ends here
